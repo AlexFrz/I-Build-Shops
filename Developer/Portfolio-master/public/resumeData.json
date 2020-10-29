@@ -1,0 +1,188 @@
+{
+  "main": {
+    "name": "Aleph",
+    "occupation": "Ruby on Rails & ReactJS Developer",
+    "description": "Full Stack Developper travelling All around the World. #DigitalNomad",
+    "image": "profile.jpg",
+    "bio": "My name is Alex. My why, is to help other realize theirs. Passionnate by the very fact of learning, I travel all around the world since three years, meeting those people that has ideas to share. I firmly believe that everybody that is passionnate about something, can make a living from it. I believe in a world, where everyone live their own truth. I want big ideas to be heard. That's why I learned the roadmap of communication skills, from website development, to content creation (videography, photography), passing by personal randing, webmarketing & SEO, public speaking and management of a team.",
+    "contactmessage": "Get in touch with me to receive further details, get a website or anything else.",
+    "email": "frezoul.alex@gmail.com",
+    "phone": "+36 72 09 46 41",
+    "address": {
+      "street": "Rue du Soleil Levant",
+      "city": "Paris",
+      "state": "France",
+      "zip": "75010"
+    },
+    "website": "",
+    "resumedownload": "",
+    "social": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/alexfrezoul/",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/alex-frezoul-311000132/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/imaleeph/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/AlexFrz",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "education": [
+      {
+        "school": "Toulouse Business School",
+        "degree": "Bachelor in Management dropout",
+        "graduated": "2018",
+        "description": "I've been one year in a Business School in France. It was a good experience, where I met a lot of people. But it wasn't for me. I didn't want to spend 10.000$ a year, and 8 hours a day in an amphitheater for 5 years. Instead, I wanted to travel, all around the world. So I dropped out."
+      },
+      {
+        "school": "The School of Life",
+        "degree": "Travelling in more than 30 countries around the world",
+        "graduated": "2017-Now",
+        "description": "After dropping out of school. I lived, like no one did. I travelled to more than 30 countries, from India, to Egypt, Turkey, Nepal and so much more. I met so much people that changed my way of seeing the world. I learned so much things in what I can call, the school of life."
+      },
+      {
+        "school": "The Hacking Project",
+        "degree": "Developper in Ruby & Rails certificate",
+        "graduated": "2019",
+        "description": "Coming back from India, I've done a 3 months intensive Bootcamp to become a developper. More than 10 hours a day, coding projects, building websites from scratch in peer learning. During this bootcamp, I discovered my passion for the vastness of computer science and software engineering and all the possibilities that it offers. 'That's what I want to make.' I remember I've told myself the first week of the course. I learned a lot of skills like JavaScript, Ruby, Ruby on Rails, Git/GitHub, BootStrap, Heroku, Ajax&jQuery, APIs and so much more."
+      },
+      {
+        "school": "FreeCodeCamp, Udemy, CleverProgrammer, EdX etc.",
+        "degree": "Always learning new things...",
+        "graduated": "2018-Now",
+        "description": "I believe that life is a synonym of learning. Stay curious about everything. The only thing i know, is that I know nothing, so I continue, and I'll continue forever to learn new skills, to invest on myself and to be curious and passionnate about life itself."
+      }
+    ],
+    "work": [
+      {
+        "company": "Freelancing",
+        "title": "Crystalizing ideas, and building new lives all around the world.",
+        "years": "March 2020 - Present",
+        "description": ""
+      }
+    ],
+    "skills": [
+      {
+        "name": "ReactJs",
+        "level": "90%"
+      },
+      {
+        "name": "Ruby & Rails",
+        "level": "95%"
+      },
+      {
+        "name": "HTML5 & CSS3",
+        "level": "95%"
+      },
+      {
+        "name": "Git",
+        "level": "60%"
+      },
+      {
+        "name": "Videography, Final Cut Pro X & Da Vinci Resolve",
+        "level": "80%"
+      },
+      {
+        "name": "Social Media Marketing and Personnal Branding",
+        "level": "70%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Transcendance, built with Ruby on Rails",
+        "category": "Quatre amis passionnés de transformation physique, mentale et spirituelle, décident de s'allier pour partager tout ce qu'ils ont appris en une vie entière de développement personnel. Au programme: des vidéos, des articles de blog, des podcasts, etc... J'ai eu l'honneur de développer ce site web. Il est toujours en cours, on compte à terme, le transformer en application mobile, et créer du contenu..",
+        "image": "transcendancescreen.jpg",
+        "url": "https://transcendance.herokuapp.com/"
+      },
+      {
+        "title": "WhiteBoard, built with Ruby on Rails",
+        "category": "Une application web, qui permet à des utilisateurs de partager leurs années de connaissances sur un sujet, en quelques liens utiles (vidéos, sites web, articles, livres...). ",
+        "image": "whiteboardscreen.jpg",
+        "url": "https://whiteboard-thp.herokuapp.com/"
+      },
+      {
+        "title": "Spiritualized, built with Ruby on Rails",
+        "category": "A spiritual teacher website, where he shares his Yoga, Philosophy, Spiritual insights.",
+        "image": "spiritualized.jpg",
+        "url": ""
+      },
+      {
+        "title": "Portfolio, built with React",
+        "category": "My curriculum vitae, developper's way.",
+        "image": "portfolio.png",
+        "url": ""
+      },
+      {
+        "title": "Amazon clone, built with React",
+        "category": "This is a project built with React, Firebase and Stripe, with authentication, basket, payment, etc.",
+        "image": "amazonscreen.png",
+        "url": "https://fir-64c6e.web.app/"
+      },
+      {
+        "title": "Spotify clone, built with React",
+        "category": "This is a project built with React, Spotify API, React Context API and Authentication",
+        "image": "spoootify.png",
+        "url": "https://spotifyyyy.netlify.app/"
+      },
+      {
+        "title": "AirBNB clone, built with React",
+        "category": "This is a project built with React, Firebase, React-Router and React Context API.",
+        "image": "airbnbclone.png",
+        "url": "https://airbandb.netlify.app/"
+      },
+      {
+        "title": "Twitter clone, built with React",
+        "category": "This is a project built with React, Firebase, FlipMove, Firestore, etc.",
+        "image": "twitter-screenshot.png",
+        "url": "https://twitter-clone-358c7.web.app/"
+      },
+      {
+        "title": "Tinder clone, built with React",
+        "category": "This is a project built with React, Firebase, some APIs, Firestore, etc.",
+        "image": "tinder-screen.png",
+        "url": "https://tinder-c3a9b.web.app/"
+      },
+      {
+        "title": "Netflix clone, built with React",
+        "category": "This is a project built with React, Firebase, TMDB's API, Firestore, etc. ",
+        "image": "netflix.png",
+        "url": "https://netflixonceagain.netlify.app/"
+      },
+      {
+        "title": "The Camper Land",
+        "category": "An e-commerce website built with Shopify, remastered with Liquid and Vue.js",
+        "image": "thecamperland.png",
+        "url": "https://www.thecamper.land/"
+      },
+      {
+        "title": "Whatsapp clone, MERN Stack",
+        "category": "Whatsapp clone built with MongoDB, Express.js, React and Node.js",
+        "image": "whatsapp.png",
+        "url": ""
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Alex est simplement l’une des personnes les plus rigoureuses que j’ai eu la chance de rencontrer, un travail fourni dans les temps avec un échange régulier pour pouvoir converger au mieux possible à la version désirée, une personne agréable et à l’écoute, même si on peut être « chiant » des fois sur les détails Alex fera au mieux pour répondre au besoin demandé. Je recommande très très fortement.",
+        "user": "Ayoub Namrani"
+      }
+    ]
+  }
+}
