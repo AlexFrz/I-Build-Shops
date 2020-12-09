@@ -1,16 +1,37 @@
-import React, { Suspense, useEffect, useRef, useState } from "react";
+import React, { Suspense, useEffect, useRef } from "react";
 import "./SellThisPen.scss";
 
 import { Section } from "./section";
 import { Canvas, useFrame } from "react-three-fiber";
 import { Html, useGLTFLoader } from "drei";
 import { spotLight } from "three";
+import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 // Page State
 import state from "./state";
 
 // Intersection observer
 import { useInView } from "react-intersection-observer";
+import Header from "./header";
+
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+    x: "100vw",
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+  },
+  transition: {
+    type: "spring",
+    delay: 0.5,
+  },
+  exit: {
+    x: "-100vw",
+    transition: { ease: "easeInOut" },
+  },
+};
 
 const Model = ({ modelPath }) => {
   const gltf = useGLTFLoader(modelPath, true);
@@ -60,9 +81,16 @@ const HTMLContent = ({
           <Model modelPath={modelPath} />
         </mesh>
         <Html portal={domContent} fullscreen>
-          <div className="container" ref={refItem}>
+          <motion.div
+            className="container"
+            ref={refItem}
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+          >
             {children}
-          </div>
+          </motion.div>
         </Html>
       </group>
     </Section>
@@ -80,6 +108,7 @@ export default function SellThisPen() {
 
   return (
     <>
+      <Header buttonColor="transparent" />
       <Canvas colorManagement camera={{ position: [150, 0, 100], fov: 70 }}>
         <Lights />
         <Suspense fallback={null}>
@@ -126,9 +155,16 @@ export default function SellThisPen() {
               <h1 className="title">
                 Let's walk, <div className="together">together.</div>
               </h1>
-              <div className="see-more">
-                <h1>My Work</h1>
-              </div>
+              <motion.div
+                className="see-more"
+                whileHover={{
+                  scale: 1.1,
+                  textShadow: "0px 0px 8px rgb(255, 255, 255)",
+                  boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+                }}
+              >
+                <h1>See my work</h1>
+              </motion.div>
             </div>
           </HTMLContent>
         </Suspense>

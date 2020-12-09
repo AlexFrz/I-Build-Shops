@@ -1,0 +1,95 @@
+{
+  "projects": [
+    {
+      "image": "theirstories_optimized.png",
+      "title": "THEIRSTORIES",
+      "text": "THEIRSTORIES is a non-profit organisation of journalists, travelers and philanthropists who go all around the world to meet those people that have stories to share. They write articles about them, photos and videos to witness how life is abroad. On this website, good-hearted visitors can donate to those people which, often, need it.",
+      "url": "https://www.theirstories.com",
+      "id": "001"
+    },
+    {
+      "title": "Transcendance",
+      "text": "Quatre amis passionnés de transformation physique, mentale et spirituelle, décident de s'allier pour partager tout ce qu'ils ont appris en une vie entière de développement personnel. Au programme: des vidéos, des articles de blog, des podcasts, etc... J'ai eu l'honneur de développer ce site web. Il est toujours en cours, on compte à terme, le transformer en application mobile, et créer du contenu..",
+      "image": "transcendancescreen.jpg",
+      "url": "https://transcendance.herokuapp.com/",
+      "id": "002"
+    },
+    {
+      "title": "WhiteBoard",
+      "text": "Une application web, qui permet à des utilisateurs de partager leurs années de connaissances sur un sujet, en quelques liens utiles (vidéos, sites web, articles, livres...). ",
+      "image": "whiteboardscreen.jpg",
+      "url": "https://whiteboard-thp.herokuapp.com/",
+      "id": "003"
+    },
+    {
+      "title": "The Camper Land",
+      "text": "An e-commerce website built with Shopify, remastered with Liquid and Vue.js",
+      "image": "thecamperland.png",
+      "url": "https://www.thecamper.land/",
+      "id": "004"
+    },
+    {
+      "title": "Portfolio",
+      "text": "My curriculum vitae, developper's way.",
+      "image": "portfolio.png",
+      "url": "www.imaleph.netlify.app",
+      "id": "005"
+    },
+    {
+      "title": "Amazon clone",
+      "text": "This is a project built with React, Firebase and Stripe, with authentication, basket, payment, etc.",
+      "image": "amazonscreen.png",
+      "url": "https://fir-64c6e.web.app/",
+      "id": "006"
+    },
+    {
+      "title": "Spotify clone",
+      "text": "This is a project built with React, Spotify API, React Context API and Authentication",
+      "image": "spoootify.png",
+      "url": "https://spotifyyyy.netlify.app/",
+      "id": "007"
+    },
+    {
+      "title": "AirBNB clone",
+      "text": "This is a project built with React, Firebase, React-Router and React Context API.",
+      "image": "airbnbclone.png",
+      "url": "https://airbandb.netlify.app/",
+      "id": "008"
+    },
+    {
+      "title": "Twitter clone",
+      "text": "This is a project built with React, Firebase, FlipMove, Firestore, etc.",
+      "image": "twitter-screenshot.png",
+      "url": "https://twitter-clone-358c7.web.app/",
+      "id": "009"
+    },
+    {
+      "title": "Tinder clone",
+      "text": "This is a project built with React, Firebase, some APIs, Firestore, etc.",
+      "image": "tinder-screen.png",
+      "url": "https://tinder-c3a9b.web.app/",
+      "id": "010"
+    },
+    {
+      "title": "Netflix clone",
+      "text": "This is a project built with React, Firebase, TMDB's API, Firestore, etc. ",
+      "image": "netflix.png",
+      "url": "https://netflixonceagain.netlify.app/",
+      "id": "011"
+    },
+    {
+      "title": "Whatsapp clone",
+      "text": "Whatsapp clone built with MongoDB, Express.js, React and Node.js",
+      "image": "whatsapp.png",
+      "url": "",
+      "id": "012"
+    },
+    {
+      "title": "Spiritualized",
+      "text": "A spiritual teacher website, where he shares his Yoga, Philosophy, Spiritual insights.",
+      "image": "spiritualized.jpg",
+      "url": "",
+      "id": "013"
+    }
+  ]
+}
