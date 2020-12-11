@@ -31,7 +31,7 @@ export default function Header({ buttonColor }) {
               <Link to="/about">who am I</Link>
             </li>
             <li>
-              <a href="/">Services</a>
+              <Link to="/services">Services</Link>
             </li>
             <motion.li
               className="btn"

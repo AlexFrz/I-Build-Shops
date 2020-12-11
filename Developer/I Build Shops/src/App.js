@@ -10,6 +10,7 @@ import Works from "./components/Works";
 import WhoAmI from "./components/WhoAmI";
 import Modal from "./components/Modal";
 import Contact from "./components/Contact";
+import Services from "./components/Services";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Route exact path="/" component={SellThisPen} />
         <Route exact path="/works" component={Works} />
         <Route exact path="/about" component={WhoAmI} />
+        <Route exact path="/services" component={Services} />
       </Switch>
     </AnimatePresence>
   );
