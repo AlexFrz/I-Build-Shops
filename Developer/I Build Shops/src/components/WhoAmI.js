@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./WhoAmI.scss";
+import { motion } from "framer-motion";
 
 function WhoAmI() {
   const imageDetails = {
@@ -9,7 +10,12 @@ function WhoAmI() {
   };
 
   return (
-    <div className="about">
+    <div
+      className="about"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="about__imageWrapper">
         <Link to="/">
           <div src="../images/me.jpg" className="about__image" />

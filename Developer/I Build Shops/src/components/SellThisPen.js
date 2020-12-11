@@ -2,7 +2,7 @@ import React, { Suspense, useEffect, useRef } from "react";
 import "./SellThisPen.scss";
 
 import { Section } from "./section";
-import { Canvas } from "react-three-fiber";
+import { Canvas, useFrame } from "react-three-fiber";
 
 // Page State
 import state from "./state";
@@ -10,6 +10,7 @@ import state from "./state";
 // Intersection observer
 
 import Header from "./header";
+import { Link } from "react-router-dom";
 import { Lights, Model, HTMLContent } from "./Three";
 
 export default function SellThisPen() {
@@ -60,7 +61,7 @@ export default function SellThisPen() {
           </HTMLContent>
           <HTMLContent
             domContent={domContent}
-            modelPath="/armchairYellow.gltf"
+            modelPath="/ferrari/scene.gltf"
             positionY={-900}
             positionX={-55}
             bgColor={"#218380"}

@@ -68,7 +68,7 @@ function Services() {
           <HTMLContent
             domContent={domContent}
             modelPath="/camera/scene.gltf"
-            positionY={-500}
+            positionY={-450}
             positionX={-55}
             bgColor={"#2ec4b6"}
             scale={[0.5, 0.5, 0.5]}

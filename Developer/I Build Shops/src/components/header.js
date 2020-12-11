@@ -25,14 +25,15 @@ export default function Header({ buttonColor }) {
               <Link to="/">discover</Link>
             </li>
             <li>
+              <Link to="/services">Services</Link>
+            </li>
+            <li>
               <Link to="/works">works</Link>
             </li>
             <li>
               <Link to="/about">who am I</Link>
             </li>
-            <li>
-              <Link to="/services">Services</Link>
-            </li>
+
             <motion.li
               className="btn"
               whileHover={{
