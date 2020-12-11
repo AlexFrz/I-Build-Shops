@@ -49,11 +49,11 @@ function Services() {
 
           <HTMLContent
             domContent={domContent}
-            modelPath="/camera/scene.gltf"
+            modelPath="/shopping/scene.gltf"
             positionY={-150}
-            positionX={-55}
-            bgColor={"#e71d36"}
-            scale={[2, 2, 2]}
+            positionX={100}
+            meshY={500}
+            bgColor={"#E71D36"}
           >
             <section class="powers">
               <div className="ul">
@@ -82,7 +82,8 @@ function Services() {
                 </h2>
                 <h2 class="first">Two possible choices:</h2>
                 <h2 class="first">
-                  <span className="hitters">10X</span>, or die.
+                  <span className="hitters">10X</span>, or{" "}
+                  <span className="smoke">die</span>.
                 </h2>
               </div>
             </section>

@@ -101,3 +101,37 @@ section {
 .hitters {
   color: #e71d36;
 }
+
+span {
+  backface-visibility: hidden;
+  .smoke {
+    display: inline-block;
+    text-shadow: 0 0 0 whitesmoke;
+    animation: crack1 2.5s linear forwards;
+  }
+  & .smoke:nth-child(even) {
+    animation: crack1 2.5s linear forwards;
+  }
+}
+
+@keyframes crack1 {
+  0%,
+  95% {
+    transform: translate(-50%, -50%);
+  }
+
+  100% {
+    transform: translate(-51%, -48%);
+  }
+}
+
+@keyframes crack2 {
+  0%,
+  95% {
+    transform: translate(-50%, -50%);
+  }
+
+  100% {
+    transform: translate(-49%, -53%);
+  }
+}
