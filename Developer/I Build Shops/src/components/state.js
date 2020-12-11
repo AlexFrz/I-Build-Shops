@@ -5,6 +5,7 @@ const state = {
   pages: 3,
   zoom: 1,
   top: createRef(),
+  showModal: false,
 };
 
 export default state;

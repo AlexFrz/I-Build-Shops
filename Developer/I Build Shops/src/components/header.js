@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./header.scss";
+import Modal from "./Modal";
 
 const variants = {
   open: { opacity: 1, x: 0 },
@@ -9,8 +10,11 @@ const variants = {
 };
 
 export default function Header({ buttonColor }) {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <header>
+      <Modal showModal={showModal} setShowModal={setShowModal} />
       <div className="header-inner">
         <Link to="/">
           <div className="logo">I BUILD SHOPS.</div>
@@ -36,12 +40,13 @@ export default function Header({ buttonColor }) {
               }}
             >
               <motion.a
-                href="/"
+                className="hireme"
                 style={{ backgroundColor: `${buttonColor}` }}
                 whileHover={{
                   textShadow: "0px 0px 8px rgb(255, 255, 255)",
                   boxShadow: "0px 0px 8px rgb(255, 255, 255)",
                 }}
+                onClick={() => setShowModal(!showModal)}
               >
                 HireMe
               </motion.a>

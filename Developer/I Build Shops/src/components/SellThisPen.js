@@ -13,6 +13,7 @@ import state from "./state";
 // Intersection observer
 import { useInView } from "react-intersection-observer";
 import Header from "./header";
+import { Link } from "react-router-dom";
 
 const containerVariants = {
   hidden: {
@@ -141,7 +142,7 @@ export default function SellThisPen() {
             bgColor={"#f9d423"}
             scale={[0.5, 0.5, 0.5]}
           >
-            <h1 className="title">I design their experiences.</h1>
+            <h1 className="title">I design experiences.</h1>
           </HTMLContent>
           <HTMLContent
             domContent={domContent}
@@ -155,15 +156,16 @@ export default function SellThisPen() {
               <h1 className="title">
                 Let's walk, <div className="together">together.</div>
               </h1>
+
               <motion.div
-                className="see-more"
+                className="contactme"
                 whileHover={{
                   scale: 1.1,
                   textShadow: "0px 0px 8px rgb(255, 255, 255)",
                   boxShadow: "0px 0px 8px rgb(255, 255, 255)",
                 }}
               >
-                <h1>See my work</h1>
+                <h1>Contact Me</h1>
               </motion.div>
             </div>
           </HTMLContent>
