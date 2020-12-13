@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.scss";
-import { Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 // Components
@@ -15,12 +15,14 @@ import Services from "./components/Services";
 export default function App() {
   return (
     <AnimatePresence>
-      <Switch>
-        <Route exact path="/" component={SellThisPen} />
-        <Route exact path="/works" component={Works} />
-        <Route exact path="/about" component={WhoAmI} />
-        <Route exact path="/services" component={Services} />
-      </Switch>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Services} />
+          <Route exact path="/works" component={Works} />
+          <Route exact path="/about" component={WhoAmI} />
+          <Route exact path="/services" component={SellThisPen} />
+        </Switch>
+      </Router>
     </AnimatePresence>
   );
 }

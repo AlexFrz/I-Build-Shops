@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import { Lights, Model, HTMLContent } from "./Three";
 import state from "./state";
 import { Canvas, useFrame } from "react-three-fiber";
+import { SellThisPen } from "./SellThisPen";
+import ButtonsNav from "./ButtonsNav";
 
 function Services() {
   const domContent = useRef();
@@ -24,7 +26,7 @@ function Services() {
           <HTMLContent
             domContent={domContent}
             modelPath="/brand/scene.gltf"
-            positionY={250}
+            positionY={100}
             positionX={-55}
             bgColor={"#f9d423"}
             scale={[15, 15, 15]}
@@ -50,7 +52,7 @@ function Services() {
           <HTMLContent
             domContent={domContent}
             modelPath="/shopping/scene.gltf"
-            positionY={-150}
+            positionY={-300}
             positionX={100}
             meshY={500}
             bgColor={"#E71D36"}
@@ -68,7 +70,7 @@ function Services() {
           <HTMLContent
             domContent={domContent}
             modelPath="/camera/scene.gltf"
-            positionY={-450}
+            positionY={-650}
             positionX={-55}
             bgColor={"#2ec4b6"}
             scale={[0.5, 0.5, 0.5]}
@@ -80,28 +82,44 @@ function Services() {
                   <span style={{ color: "#befbff" }}>Numeric Revolution</span>{" "}
                   knocks.
                 </h2>
-                <h2 class="first">Two possible choices:</h2>
-                <h2 class="first">
-                  <span className="hitters">10X</span>, or{" "}
-                  <span className="smoke">die</span>.
-                </h2>
               </div>
             </section>
           </HTMLContent>
           <HTMLContent
             domContent={domContent}
+            modelPath="/shopping/scene.gltf"
+            positionY={-1100}
+            positionX={100}
+            meshY={500}
+            bgColor={"#2EC4B6"}
+          >
+            <h1 className="title strike">I don't just build shops.</h1>
+          </HTMLContent>
+          <HTMLContent
+            domContent={domContent}
+            modelPath="/ferrari2/scene.gltf"
+            positionY={-1350}
+            positionX={-55}
+            bgColor={"#f9d423"}
+            scale={[0.5, 0.5, 0.5]}
+          >
+            <h1 className="title">
+              I design <span className="exp">experiences.</span>
+            </h1>
+          </HTMLContent>
+
+          <HTMLContent
+            domContent={domContent}
             modelPath="/dollar/scene.gltf"
-            positionY={-800}
+            positionY={-1700}
             positionX={-55}
             bgColor={"#218380"}
             scale={[30, 30, 30]}
           >
-            <div className="block">
-              <h1 className="title">
-                Let's 10X <br /> your business,{" "}
-                <div className="together">together.</div>
-              </h1>
-            </div>
+            <h1 className="title">
+              Let's 10X <br /> your business,{" "}
+              <div className="together">together.</div>
+            </h1>
           </HTMLContent>
         </Suspense>
       </Canvas>

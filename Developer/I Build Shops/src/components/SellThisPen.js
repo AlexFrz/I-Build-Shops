@@ -57,7 +57,9 @@ export default function SellThisPen() {
             bgColor={"#f9d423"}
             scale={[0.5, 0.5, 0.5]}
           >
-            <h1 className="title">I design experiences.</h1>
+            <h1 className="title">
+              I design <span className="exp">experiences.</span>
+            </h1>
           </HTMLContent>
           <HTMLContent
             domContent={domContent}
@@ -67,11 +69,9 @@ export default function SellThisPen() {
             bgColor={"#218380"}
             scale={[0, 0, 0]}
           >
-            <div className="block">
-              <h1 className="title">
-                Let's walk, <div className="together">together.</div>
-              </h1>
-            </div>
+            <h1 className="title">
+              Let's walk, <div className="together">together.</div>
+            </h1>
           </HTMLContent>
         </Suspense>
       </Canvas>

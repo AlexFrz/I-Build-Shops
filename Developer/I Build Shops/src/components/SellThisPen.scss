@@ -1,23 +1,65 @@
+@import "../variables.scss";
+
 .scrollArea {
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 .title {
-  font-size: 10rem;
-  text-align: center;
-  width: 100%;
   margin: 0 auto;
   color: #fff;
+  position: relative;
+  @include sm {
+    margin-top: 30%;
+    width: 60vw;
+    font-size: 4rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  @include md {
+    width: 100vw;
+    margin: 0 auto;
+    margin-top: 20%;
+    font-size: 6rem;
+    text-align: center;
+    justify-content: center;
+  }
+  @include lg {
+    width: 90vw;
+    margin-left: 7.5%;
+    font-size: 6rem;
+    text-align: center;
+    justify-content: center;
+  }
+  @include xl {
+    text-align: center;
+    margin: auto;
+    width: 95%;
+    font-size: 6rem;
+    justify-content: center;
+  }
+
   span {
     display: flex;
   }
-  @media (max-width: 1440px) {
-    font-size: 6rem;
+}
+
+.exp {
+  @include sm {
+    width: 100%;
+    margin-left: -80px;
+  }
+  @include md {
+    position: relative;
+    width: 95vw;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
   }
 }
 
@@ -83,6 +125,9 @@
 
 .block {
   display: block;
+  @include md {
+    margin-left: -220px;
+  }
 }
 
 .see-more {
@@ -107,4 +152,8 @@
   text-align: center;
   cursor: pointer;
   border: 1px solid #fff;
+}
+
+.buttons__wrapper {
+  width: 70%;
 }
