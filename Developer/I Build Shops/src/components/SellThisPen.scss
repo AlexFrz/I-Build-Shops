@@ -14,9 +14,10 @@
   color: #fff;
   position: relative;
   @include sm {
+    margin: 0 auto;
     margin-top: 30%;
-    width: 60vw;
-    font-size: 4rem;
+    width: 70vw;
+    font-size: 3.5rem;
     text-align: center;
     justify-content: center;
   }
@@ -29,6 +30,7 @@
     text-align: center;
     justify-content: center;
   }
+
   @include lg {
     width: 90vw;
     margin-left: 7.5%;
@@ -52,7 +54,7 @@
 .exp {
   @include sm {
     width: 100%;
-    margin-left: -80px;
+    margin-left: -55px;
   }
   @include md {
     position: relative;
@@ -89,6 +91,14 @@
 
 .together {
   color: #f15946;
+  @include sm {
+    margin: 0 auto;
+  }
+  @include md {
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 @keyframes strike {
@@ -128,30 +138,6 @@
   @include md {
     margin-left: -220px;
   }
-}
-
-.see-more {
-  margin-top: 100px;
-  color: #fff;
-  font-weight: 600;
-  background: #transparent;
-  padding: 16px 24px;
-  border-radius: 10px;
-  text-align: center;
-  cursor: pointer;
-  border: 1px solid #fff;
-}
-
-.contactme {
-  margin-top: 50px;
-  color: #fff;
-  font-weight: 600;
-  background: #f15946;
-  padding: 16px 24px;
-  border-radius: 10px;
-  text-align: center;
-  cursor: pointer;
-  border: 1px solid #fff;
 }
 
 .buttons__wrapper {

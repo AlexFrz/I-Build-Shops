@@ -7,8 +7,16 @@ section {
 }
 
 .header__text-wrapper {
-  width: 80%;
-  margin-left: 7.5%;
+  @include sm {
+    width: 90%;
+    margin-left: 7.5%;
+    margin-top: -10%;
+  }
+  @include xl {
+    width: 80%;
+    margin-left: 7.5%;
+  }
+
   color: white;
 
   .hitters {
@@ -18,7 +26,19 @@ section {
 }
 
 .punchline {
-  font-size: 90px;
+  @include sm {
+    font-size: 3.5rem;
+  }
+  @include md {
+    font-size: 6rem;
+  }
+  @include lg {
+    margin-top: 30%;
+    font-size: 6rem;
+  }
+  @include xl {
+    font-size: 90px;
+  }
   font-weight: 900;
 }
 
@@ -32,18 +52,51 @@ section {
 }
 
 .ul {
-  padding-left: 5%;
-  padding-top: 1%;
-  list-style: none;
-  transition: 2s;
-  .li {
-    padding-left: 2.5%;
-    padding: -20px 0;
-    padding: 6px;
-    font-size: 100px;
-    font-weight: 800;
+  @include sm {
+    padding-left: 5%;
+    padding-top: 1%;
+    list-style: none;
+    transition: 2s;
+    .li {
+      padding-left: 2.5%;
+      padding: -20px 0;
+      padding: 6px;
+      font-size: 3.5rem;
+      font-weight: 800;
 
-    border-bottom: solid 1px white;
+      border-bottom: solid 1px white;
+    }
+  }
+  @include md {
+    padding-left: 5%;
+    padding-top: 1%;
+    list-style: none;
+    transition: 2s;
+    .li {
+      padding-left: 2.5%;
+      padding: -20px 0;
+      padding: 6px;
+      font-size: 5rem;
+      font-weight: 800;
+
+      border-bottom: solid 1px white;
+    }
+  }
+
+  @include xl {
+    padding-left: 5%;
+    padding-top: 1%;
+    list-style: none;
+    transition: 2s;
+    .li {
+      padding-left: 2.5%;
+      padding: -20px 0;
+      padding: 6px;
+      font-size: 100px;
+      font-weight: 800;
+
+      border-bottom: solid 1px white;
+    }
   }
 }
 
@@ -56,8 +109,15 @@ section {
   padding-top: 250px;
 
   h2 {
+    @include sm {
+      margin-top: 100px;
+      font-size: 3rem;
+    }
+    @include xl {
+      font-size: 65px;
+    }
     color: white;
-    font-size: 65px;
+
     font-weight: 900;
 
     span {
@@ -136,4 +196,47 @@ span {
   100% {
     transform: translate(-49%, -53%);
   }
+}
+
+li {
+  list-style: none;
+  margin: 0 60px;
+
+  .contact__button {
+    position: relative;
+    width: 30vw;
+    .contactme {
+      position: absolute;
+      justify-content: center;
+      text-align: center;
+      margin: 100px 200px;
+
+      color: #fff;
+      font-weight: 600;
+      background: #f15946;
+      padding: 16px 24px;
+      border-radius: 10px;
+      text-align: center;
+      cursor: pointer;
+      border: 1px solid #fff;
+    }
+  }
+
+  a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.buttons {
+  display: block;
+}
+
+.contact-me {
+  font-size: 3rem;
+}
+
+.10x {
+  padding-left: 10px;
 }

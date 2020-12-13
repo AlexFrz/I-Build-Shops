@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter as Router } from "react-router-dom";
-import "./variables.scss";
 import classNames from "classnames";
 
 const Cursor = () => {

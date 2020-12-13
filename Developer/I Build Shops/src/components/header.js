@@ -1,15 +1,10 @@
 import { motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./header.scss";
 import Modal from "./Modal";
-import Menu from "./Menu";
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile,
-} from "react-device-detect";
+
+import { BrowserView, MobileView } from "react-device-detect";
 
 const variants = {
   open: { opacity: 1, x: 0 },
@@ -18,7 +13,6 @@ const variants = {
 
 export default function Header({ buttonColor }) {
   const [showModal, setShowModal] = useState(false);
-  const [showDropdown, setShowDropdown] = useState(false);
 
   return (
     <>
@@ -31,15 +25,27 @@ export default function Header({ buttonColor }) {
             </Link>
             <nav>
               <ul>
-                <li>
+                <motion.li
+                  whileHover={{
+                    scale: 1.1,
+                  }}
+                >
                   <Link to="/services">Discover</Link>
-                </li>
-                <li>
+                </motion.li>
+                <motion.li
+                  whileHover={{
+                    scale: 1.1,
+                  }}
+                >
                   <Link to="/works">works</Link>
-                </li>
-                <li>
+                </motion.li>
+                <motion.li
+                  whileHover={{
+                    scale: 1.1,
+                  }}
+                >
                   <Link to="/about">who am I</Link>
-                </li>
+                </motion.li>
                 <motion.li
                   className="btn"
                   whileHover={{
@@ -88,7 +94,7 @@ export default function Header({ buttonColor }) {
                     }}
                     onClick={() => setShowModal(!showModal)}
                   >
-                    HireMe
+                    Contact
                   </motion.a>
                 </motion.li>
               </ul>

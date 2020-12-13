@@ -5,7 +5,6 @@ import { AnimatePresence } from "framer-motion";
 
 // Components
 
-import SellThisPen from "./components/SellThisPen";
 import Works from "./components/Works";
 import WhoAmI from "./components/WhoAmI";
 import Modal from "./components/Modal";
@@ -20,7 +19,6 @@ export default function App() {
           <Route exact path="/" component={Services} />
           <Route exact path="/works" component={Works} />
           <Route exact path="/about" component={WhoAmI} />
-          <Route exact path="/services" component={SellThisPen} />
         </Switch>
       </Router>
     </AnimatePresence>

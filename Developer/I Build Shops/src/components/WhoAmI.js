@@ -4,13 +4,8 @@ import "./WhoAmI.scss";
 import { motion } from "framer-motion";
 
 function WhoAmI() {
-  const imageDetails = {
-    width: 600,
-    height: 600,
-  };
-
   return (
-    <div
+    <motion.div
       className="about"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -77,7 +72,7 @@ function WhoAmI() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -7,7 +7,7 @@ import Header from "./header";
 import { motion } from "framer-motion";
 
 function Works() {
-  const [works, setWorks] = useState(projects);
+  const [works] = useState(projects);
 
   const renderWorks = works.map((work) => (
     <SwiperSlide>

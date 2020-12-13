@@ -3,7 +3,7 @@ import { Html, useGLTFLoader } from "drei";
 import { spotLight } from "three";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 import { Section } from "./section";
-import { Canvas, useFrame } from "react-three-fiber";
+import { useFrame } from "react-three-fiber";
 import { useInView } from "react-intersection-observer";
 
 const containerVariants = {
