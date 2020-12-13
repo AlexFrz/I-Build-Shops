@@ -12,26 +12,28 @@ function Works() {
   const renderWorks = works.map((work) => (
     <SwiperSlide>
       <div className="works__swiper-slide">
-        <div
-          className="works__slide-img"
-          style={{
-            background:
-              "url(" +
-              require("../images/projects/" + work.image) +
-              ") top center / cover no-repeat",
-          }}
-        >
-          <div class="works__slide-text">
-            <h4>
-              <span>{work.title}</span>
-            </h4>
+        <a href={work.url}>
+          <div
+            className="works__slide-img"
+            style={{
+              background:
+                "url(" +
+                require("../images/projects/" + work.image) +
+                ") top center / cover no-repeat",
+            }}
+          >
+            <div class="works__slide-text">
+              <h4>
+                <span>{work.title}</span>
+              </h4>
+            </div>
           </div>
-        </div>
-        <div className="works__slide-number">
-          <p>
-            <span>{work.id}</span>
-          </p>
-        </div>
+          <div className="works__slide-number">
+            <p>
+              <span>{work.id}</span>
+            </p>
+          </div>
+        </a>
       </div>
     </SwiperSlide>
   ));
