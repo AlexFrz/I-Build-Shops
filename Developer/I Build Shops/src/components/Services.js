@@ -3,11 +3,10 @@ import React, { Suspense, useEffect, useRef, useState } from "react";
 import "./Services.scss";
 import Header from "./header";
 import { motion } from "framer-motion";
-import { Lights, Model, HTMLContent } from "./Three";
+import { Lights, HTMLContent } from "./Three";
 import state from "./state";
-import { Canvas, useFrame } from "react-three-fiber";
+import { Canvas } from "react-three-fiber";
 import { SellThisPen } from "./SellThisPen";
-import ButtonsNav from "./ButtonsNav";
 import Modal from "./Modal";
 
 function Services() {
@@ -30,7 +29,7 @@ function Services() {
           <HTMLContent
             domContent={domContent}
             modelPath="/brand/scene.gltf"
-            positionY={150}
+            positionY={175}
             positionX={-55}
             bgColor={"#f9d423"}
             scale={[15, 15, 15]}
@@ -156,7 +155,7 @@ function Services() {
             scale={[30, 30, 30]}
           >
             <div className="buttons">
-              <h1 className="title 10x">
+              <h1 className="title">
                 Let's 10X your business,{" "}
                 <span className="together">together.</span>
               </h1>
