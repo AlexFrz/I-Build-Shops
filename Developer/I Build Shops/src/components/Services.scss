@@ -27,6 +27,7 @@ section {
 
 .punchline {
   @include sm {
+    margin-top: 60%;
     font-size: 3.5rem;
   }
   @include md {

@@ -1,6 +1,11 @@
 @import "../variables.scss";
 
 .about {
+  @include sm {
+    display: block;
+    height: 300vh;
+  }
+  background-color: #f15946;
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -23,6 +28,11 @@
 }
 
 .about__image {
+  @include sm {
+    position: relative;
+    background-position-x: -150px;
+    width: 100vw;
+  }
   background: url(../images/me.jpg) center / cover;
   width: 50vw;
   height: 100vh;
